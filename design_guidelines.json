@@ -1,0 +1,100 @@
+{
+  "project_domain": "Tour Agency Website & Admin Panel",
+  "theme": "light",
+  "archetype": "Organic & Earthy",
+  "mood": "Adventurous, grounded, trustworthy, inviting",
+  "colors": {
+    "background": "#F4EFEA",
+    "surface": "#EBE4D8",
+    "primary": "#2C4C3B",
+    "primary_hover": "#20382B",
+    "accent": "#B84A2E",
+    "accent_hover": "#983C25",
+    "text_primary": "#1B241D",
+    "text_secondary": "#4A5D50",
+    "border": "#D3CEC4",
+    "admin_sidebar_bg": "#1B241D",
+    "admin_sidebar_text": "#F4EFEA"
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit",
+      "weights": ["400", "500", "700"],
+      "rules": "tracking-tight for H1/H2. Never center by default. Use fluid scales maxing at text-6xl for hero."
+    },
+    "body": {
+      "family": "Manrope",
+      "weights": ["400", "500", "600"],
+      "rules": "leading-relaxed for body text. Use text-base for standard paragraphs."
+    },
+    "labels": {
+      "rules": "Uppercase, text-xs, tracking-[0.2em], text_secondary color."
+    }
+  },
+  "spacing_and_layout": {
+    "marketing_grid": "Bento 'Tetris' Grid: grid-cols-1 md:grid-cols-8 lg:grid-cols-12, wide gaps (gap-8 to gap-12). Leave empty cells for offset alignment.",
+    "admin_grid": "Control Room Grid: grid-cols-1 md:grid-cols-3 lg:grid-cols-4, tight gaps (gap-4 to gap-6). Use h-full so widgets stretch.",
+    "generous_padding": "Use p-8, p-12, p-16, p-24 for marketing sections to provide breathing room."
+  },
+  "components": {
+    "marketing_surfaces": "Pure HTML/Tailwind. Flat backgrounds using 'surface' color (#EBE4D8), 1px solid border (#D3CEC4), no default shadow. Sharp or 8px rounded corners.",
+    "admin_surfaces": "Use Shadcn components, customized to remove vercel-look. Solid backgrounds, border-collapse layouts.",
+    "header": "Crystal Glassmorphism: backdrop-blur-xl bg-[#F4EFEA]/80, 1px bottom border border-[#2C4C3B]/10. Must ensure nav links are high contrast.",
+    "footer": "Contrast Shift: Deep Forest Green (#2C4C3B) background with Warm Sand (#F4EFEA) text. Massive padding py-24."
+  },
+  "interactions_and_motion": {
+    "hover_states": "ALWAYS set explicit hover text and bg colors (e.g., hover:bg-[#20382B] hover:text-[#F4EFEA]). Marketing cards get a slight lift (-translate-y-1) and shadow-lg on hover.",
+    "focus_states": "High contrast focus rings: focus:ring-2 focus:ring-[#B84A2E] focus:outline-none.",
+    "animation": "Use framer-motion for staggered entrances of tour grids. Use lenis for momentum scrolling on the marketing site."
+  },
+  "icons": {
+    "library": "@phosphor-icons/react",
+    "style": "duotone or regular weight, scaling cleanly to match text size."
+  },
+  "testing": {
+    "attributes": "All interactive elements MUST include data-testid attribute (e.g., data-testid='tour-book-button')."
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1693643449957-80c9c36772d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwzfHxhZHZlbnR1cmUlMjBtb3VudGFpbiUyMGhpa2luZ3xlbnwwfHx8fDE3Nzc0MDE0MzV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Person on top of a mountain surrounded by clouds. Use with bg-[#1B241D]/30 overlay to ensure text contrast."
+    },
+    "tours": [
+      {
+        "url": "https://images.pexels.com/photos/20227625/pexels-photo-20227625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Man hiking on rocky mountain trail. Use for Alpine / Mountain Trek tour."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1664849275192-503e4c864380?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxmb3Jlc3QlMjBjYW55b24lMjByaXZlcnxlbnwwfHx8fDE3Nzc0MDE0MzV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Waterfall in a forest. Use for Canyon / Forest River tour."
+      },
+      {
+        "url": "https://images.pexels.com/photos/19333753/pexels-photo-19333753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Group of hikers trekking. Use for Group Expedition tour."
+      }
+    ],
+    "testimonials": [
+      {
+        "url": "https://images.unsplash.com/photo-1599139497043-042b5c90db45?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwyfHx0cmF2ZWxlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc3NzQwMTQzNXww&ixlib=rb-4.1.0&q=85",
+        "description": "Smiling traveler woman in hat."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1664312572933-0563f14484a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHx0cmF2ZWxlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc3NzQwMTQzNXww&ixlib=rb-4.1.0&q=85",
+        "description": "Man wearing glasses."
+      }
+    ],
+    "about_image": {
+      "url": "https://images.unsplash.com/photo-1609373066983-cee8662ea93f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxhZHZlbnR1cmUlMjBtb3VudGFpbiUyMGhpa2luZ3xlbnwwfHx8fDE3Nzc0MDE0MzV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Woman standing on rock formation during daytime."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Load fonts from Google Fonts: Outfit (headings) and Manrope (body).",
+    "Install and use @phosphor-icons/react for icons.",
+    "Install framer-motion and lenis for smooth scrolling and animations on the marketing site.",
+    "Do not use generic 'card' component wrappers from Shadcn for the marketing pages; use pure HTML/Tailwind divs with the defined 'surface' color and 1px border. Shadcn is for Admin forms/tables/modals.",
+    "Admin dashboard must use a dense grid layout with strict functional colors. Admin sidebar should be dark text_primary (#1B241D) with white text.",
+    "Tour detail page must have a large immersive header with max-overlay opacity of bg-black/40.",
+    "Forms in both the booking request and admin panel must use customized Shadcn components matching the earthy theme."
+  ]
+}

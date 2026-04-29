@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 36 30% 95%;
+        --foreground: 130 14% 12%;
+        --card: 36 30% 95%;
+        --card-foreground: 130 14% 12%;
+        --popover: 36 30% 95%;
+        --popover-foreground: 130 14% 12%;
+        --primary: 138 27% 24%;
+        --primary-foreground: 36 30% 95%;
+        --secondary: 33 26% 88%;
+        --secondary-foreground: 130 14% 12%;
+        --muted: 33 26% 88%;
+        --muted-foreground: 138 12% 33%;
+        --accent: 14 60% 45%;
+        --accent-foreground: 36 30% 95%;
+        --destructive: 0 70% 45%;
+        --destructive-foreground: 36 30% 95%;
+        --border: 36 13% 80%;
+        --input: 36 13% 80%;
+        --ring: 138 27% 24%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-sand-100 text-forest-900 font-sans;
+        font-feature-settings: "ss01", "cv11";
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-display tracking-tight;
+    }
+    ::selection {
+        background-color: #B84A2E;
+        color: #F4EFEA;
+    }
+}
+
+@layer components {
+    .label-eyebrow {
+        @apply text-xs uppercase tracking-[0.25em] font-medium text-forest/70;
+    }
+    .container-x {
+        @apply max-w-7xl mx-auto px-6 md:px-10;
+    }
+    .btn-primary {
+        @apply inline-flex items-center justify-center gap-2 bg-forest text-sand-100 px-6 py-3 rounded-full font-medium transition-all hover:bg-forest-700 hover:-translate-y-0.5 active:translate-y-0;
+    }
+    .btn-accent {
+        @apply inline-flex items-center justify-center gap-2 bg-terracotta text-sand-100 px-6 py-3 rounded-full font-medium transition-all hover:bg-terracotta-700 hover:-translate-y-0.5;
+    }
+    .btn-outline {
+        @apply inline-flex items-center justify-center gap-2 border border-forest/30 text-forest-900 px-6 py-3 rounded-full font-medium transition-all hover:bg-forest hover:text-sand-100;
+    }
+    .surface-card {
+        @apply bg-sand-200 border border-sand-300 rounded-2xl;
+    }
+    .grain {
+        background-image: radial-gradient(circle at 1px 1px, rgba(27, 36, 29, 0.06) 1px, transparent 0);
+        background-size: 24px 24px;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+}
