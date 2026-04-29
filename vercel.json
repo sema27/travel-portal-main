@@ -1,16 +1,3 @@
 {
-  "version": 2,
-  "experimentalServices": {
-    "frontend": {
-      "entryPoint": "frontend",
-      "build": {
-        "env": {
-          "CI": "true"
-        }
-      }
-    },
-    "backend": {
-      "entryPoint": "backend/server.py"
-    }
-  }
+  "version": 2
 }
